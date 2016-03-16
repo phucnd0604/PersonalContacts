@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		550C91451C9017990007E6C4 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550C91401C9017990007E6C4 /* Cells.swift */; };
+		550C91461C9017990007E6C4 /* Controllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550C91411C9017990007E6C4 /* Controllers.swift */; };
+		550C91471C9017990007E6C4 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550C91421C9017990007E6C4 /* Core.swift */; };
+		550C91481C9017990007E6C4 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550C91431C9017990007E6C4 /* Helpers.swift */; };
+		550C91491C9017990007E6C4 /* Rows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550C91441C9017990007E6C4 /* Rows.swift */; };
+		550C91521C9017A80007E6C4 /* CoreDataModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550C914A1C9017A80007E6C4 /* CoreDataModelable.swift */; };
+		550C91531C9017A80007E6C4 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550C914B1C9017A80007E6C4 /* CoreDataStack.swift */; };
+		550C91541C9017A80007E6C4 /* EntityMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550C914C1C9017A80007E6C4 /* EntityMonitor.swift */; };
+		550C91551C9017A80007E6C4 /* FetchedResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550C914D1C9017A80007E6C4 /* FetchedResultsController.swift */; };
+		550C91561C9017A80007E6C4 /* NSManagedObjectContext+AsyncHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550C914E1C9017A80007E6C4 /* NSManagedObjectContext+AsyncHelpers.swift */; };
+		550C91571C9017A80007E6C4 /* NSManagedObjectContext+SaveHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550C914F1C9017A80007E6C4 /* NSManagedObjectContext+SaveHelpers.swift */; };
+		550C91581C9017A80007E6C4 /* NSPersistentStoreCoordinator+AsyncHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550C91501C9017A80007E6C4 /* NSPersistentStoreCoordinator+AsyncHelpers.swift */; };
+		550C91591C9017A80007E6C4 /* NSPersistentStoreCoordinator+SQLiteHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550C91511C9017A80007E6C4 /* NSPersistentStoreCoordinator+SQLiteHelpers.swift */; };
+		55CF140F1C85AC1000F442B0 /* AEXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF140E1C85AC1000F442B0 /* AEXML.swift */; };
+		55CF14231C86F92200F442B0 /* WorkerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF14211C86F92200F442B0 /* WorkerTableViewController.swift */; };
+		55CF14291C86FE4900F442B0 /* DirectorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF14271C86FE4900F442B0 /* DirectorTableViewCell.swift */; };
+		55CF142A1C86FE4900F442B0 /* DirectorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55CF14281C86FE4900F442B0 /* DirectorTableViewCell.xib */; };
+		55CF142D1C86FE5F00F442B0 /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF142B1C86FE5F00F442B0 /* EmployeeTableViewCell.swift */; };
+		55CF142E1C86FE5F00F442B0 /* EmployeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55CF142C1C86FE5F00F442B0 /* EmployeeTableViewCell.xib */; };
+		55CF14311C86FE7900F442B0 /* BookkeeperTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF142F1C86FE7900F442B0 /* BookkeeperTableViewCell.swift */; };
+		55CF14321C86FE7900F442B0 /* BookkeeperTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55CF14301C86FE7900F442B0 /* BookkeeperTableViewCell.xib */; };
+		55CF144C1C8705F200F442B0 /* Bookkeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF14441C8705F200F442B0 /* Bookkeeper.swift */; };
+		55CF144D1C8705F200F442B0 /* Bookkeeper+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF14451C8705F200F442B0 /* Bookkeeper+CoreDataProperties.swift */; };
+		55CF144E1C8705F200F442B0 /* Director.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF14461C8705F200F442B0 /* Director.swift */; };
+		55CF144F1C8705F200F442B0 /* Director+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF14471C8705F200F442B0 /* Director+CoreDataProperties.swift */; };
+		55CF14501C8705F200F442B0 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF14481C8705F200F442B0 /* Employee.swift */; };
+		55CF14511C8705F200F442B0 /* Employee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF14491C8705F200F442B0 /* Employee+CoreDataProperties.swift */; };
+		55CF14521C8705F200F442B0 /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF144A1C8705F200F442B0 /* Worker.swift */; };
+		55CF14531C8705F200F442B0 /* Worker+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF144B1C8705F200F442B0 /* Worker+CoreDataProperties.swift */; };
+		55CF14561C88266C00F442B0 /* CoreDataStackSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF14551C88266C00F442B0 /* CoreDataStackSingleton.swift */; };
+		55FEA7D41C84B399001394CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FEA7D31C84B399001394CB /* AppDelegate.swift */; };
+		55FEA7DC1C84B399001394CB /* Enterprise_contacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55FEA7DA1C84B399001394CB /* Enterprise_contacts.xcdatamodeld */; };
+		55FEA7DE1C84B399001394CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55FEA7DD1C84B399001394CB /* Assets.xcassets */; };
+		55FEA7E91C84C4BE001394CB /* SplashScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55FEA7E81C84C4BE001394CB /* SplashScreen.xib */; };
+		55FEA7EF1C857211001394CB /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FEA7ED1C857211001394CB /* ServiceViewController.swift */; };
+		55FEA7F01C857211001394CB /* ServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55FEA7EE1C857211001394CB /* ServiceViewController.xib */; };
+		55FEA7F31C857324001394CB /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FEA7F11C857324001394CB /* GalleryViewController.swift */; };
+		55FEA7F41C857324001394CB /* GalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55FEA7F21C857324001394CB /* GalleryViewController.xib */; };
+		55FEA7F61C85768F001394CB /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FEA7F51C85768F001394CB /* ListTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		550C91401C9017990007E6C4 /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cells.swift; path = "Enterprise contacts/Eureka/Cells.swift"; sourceTree = "<group>"; };
+		550C91411C9017990007E6C4 /* Controllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Controllers.swift; path = "Enterprise contacts/Eureka/Controllers.swift"; sourceTree = "<group>"; };
+		550C91421C9017990007E6C4 /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Core.swift; path = "Enterprise contacts/Eureka/Core.swift"; sourceTree = "<group>"; };
+		550C91431C9017990007E6C4 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = "Enterprise contacts/Eureka/Helpers.swift"; sourceTree = "<group>"; };
+		550C91441C9017990007E6C4 /* Rows.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Rows.swift; path = "Enterprise contacts/Eureka/Rows.swift"; sourceTree = "<group>"; };
+		550C914A1C9017A80007E6C4 /* CoreDataModelable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataModelable.swift; path = "Enterprise contacts/CoreDataStack/CoreDataModelable.swift"; sourceTree = "<group>"; };
+		550C914B1C9017A80007E6C4 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = "Enterprise contacts/CoreDataStack/CoreDataStack.swift"; sourceTree = "<group>"; };
+		550C914C1C9017A80007E6C4 /* EntityMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntityMonitor.swift; path = "Enterprise contacts/CoreDataStack/EntityMonitor.swift"; sourceTree = "<group>"; };
+		550C914D1C9017A80007E6C4 /* FetchedResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FetchedResultsController.swift; path = "Enterprise contacts/CoreDataStack/FetchedResultsController.swift"; sourceTree = "<group>"; };
+		550C914E1C9017A80007E6C4 /* NSManagedObjectContext+AsyncHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectContext+AsyncHelpers.swift"; path = "Enterprise contacts/CoreDataStack/NSManagedObjectContext+AsyncHelpers.swift"; sourceTree = "<group>"; };
+		550C914F1C9017A80007E6C4 /* NSManagedObjectContext+SaveHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectContext+SaveHelpers.swift"; path = "Enterprise contacts/CoreDataStack/NSManagedObjectContext+SaveHelpers.swift"; sourceTree = "<group>"; };
+		550C91501C9017A80007E6C4 /* NSPersistentStoreCoordinator+AsyncHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSPersistentStoreCoordinator+AsyncHelpers.swift"; path = "Enterprise contacts/CoreDataStack/NSPersistentStoreCoordinator+AsyncHelpers.swift"; sourceTree = "<group>"; };
+		550C91511C9017A80007E6C4 /* NSPersistentStoreCoordinator+SQLiteHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSPersistentStoreCoordinator+SQLiteHelpers.swift"; path = "Enterprise contacts/CoreDataStack/NSPersistentStoreCoordinator+SQLiteHelpers.swift"; sourceTree = "<group>"; };
+		55CF140E1C85AC1000F442B0 /* AEXML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEXML.swift; sourceTree = "<group>"; };
+		55CF14211C86F92200F442B0 /* WorkerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkerTableViewController.swift; sourceTree = "<group>"; };
+		55CF14271C86FE4900F442B0 /* DirectorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DirectorTableViewCell.swift; path = "Enterprise contacts/DirectorTableViewCell.swift"; sourceTree = "<group>"; };
+		55CF14281C86FE4900F442B0 /* DirectorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DirectorTableViewCell.xib; path = "Enterprise contacts/DirectorTableViewCell.xib"; sourceTree = "<group>"; };
+		55CF142B1C86FE5F00F442B0 /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmployeeTableViewCell.swift; path = "Enterprise contacts/EmployeeTableViewCell.swift"; sourceTree = "<group>"; };
+		55CF142C1C86FE5F00F442B0 /* EmployeeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EmployeeTableViewCell.xib; path = "Enterprise contacts/EmployeeTableViewCell.xib"; sourceTree = "<group>"; };
+		55CF142F1C86FE7900F442B0 /* BookkeeperTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookkeeperTableViewCell.swift; path = "Enterprise contacts/BookkeeperTableViewCell.swift"; sourceTree = "<group>"; };
+		55CF14301C86FE7900F442B0 /* BookkeeperTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BookkeeperTableViewCell.xib; path = "Enterprise contacts/BookkeeperTableViewCell.xib"; sourceTree = "<group>"; };
+		55CF14441C8705F200F442B0 /* Bookkeeper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bookkeeper.swift; path = "Enterprise contacts/Bookkeeper.swift"; sourceTree = "<group>"; };
+		55CF14451C8705F200F442B0 /* Bookkeeper+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Bookkeeper+CoreDataProperties.swift"; path = "Enterprise contacts/Bookkeeper+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		55CF14461C8705F200F442B0 /* Director.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Director.swift; path = "Enterprise contacts/Director.swift"; sourceTree = "<group>"; };
+		55CF14471C8705F200F442B0 /* Director+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Director+CoreDataProperties.swift"; path = "Enterprise contacts/Director+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		55CF14481C8705F200F442B0 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Employee.swift; path = "Enterprise contacts/Employee.swift"; sourceTree = "<group>"; };
+		55CF14491C8705F200F442B0 /* Employee+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Employee+CoreDataProperties.swift"; path = "Enterprise contacts/Employee+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		55CF144A1C8705F200F442B0 /* Worker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Worker.swift; path = "Enterprise contacts/Worker.swift"; sourceTree = "<group>"; };
+		55CF144B1C8705F200F442B0 /* Worker+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Worker+CoreDataProperties.swift"; path = "Enterprise contacts/Worker+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		55CF14551C88266C00F442B0 /* CoreDataStackSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStackSingleton.swift; sourceTree = "<group>"; };
+		55FEA7D01C84B399001394CB /* Enterprise contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Enterprise contacts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55FEA7D31C84B399001394CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		55FEA7DB1C84B399001394CB /* Enterprise_contacts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Enterprise_contacts.xcdatamodel; sourceTree = "<group>"; };
+		55FEA7DD1C84B399001394CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55FEA7E21C84B399001394CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55FEA7E81C84C4BE001394CB /* SplashScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashScreen.xib; sourceTree = "<group>"; };
+		55FEA7ED1C857211001394CB /* ServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
+		55FEA7EE1C857211001394CB /* ServiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceViewController.xib; sourceTree = "<group>"; };
+		55FEA7F11C857324001394CB /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		55FEA7F21C857324001394CB /* GalleryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GalleryViewController.xib; sourceTree = "<group>"; };
+		55FEA7F51C85768F001394CB /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55FEA7CD1C84B399001394CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55CF14201C86F8B300F442B0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				55CF14441C8705F200F442B0 /* Bookkeeper.swift */,
+				55CF14451C8705F200F442B0 /* Bookkeeper+CoreDataProperties.swift */,
+				55CF14461C8705F200F442B0 /* Director.swift */,
+				55CF14471C8705F200F442B0 /* Director+CoreDataProperties.swift */,
+				55CF14481C8705F200F442B0 /* Employee.swift */,
+				55CF14491C8705F200F442B0 /* Employee+CoreDataProperties.swift */,
+				55CF144A1C8705F200F442B0 /* Worker.swift */,
+				55CF144B1C8705F200F442B0 /* Worker+CoreDataProperties.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		55CF14331C86FE9000F442B0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				55CF14271C86FE4900F442B0 /* DirectorTableViewCell.swift */,
+				55CF14281C86FE4900F442B0 /* DirectorTableViewCell.xib */,
+				55CF142B1C86FE5F00F442B0 /* EmployeeTableViewCell.swift */,
+				55CF142C1C86FE5F00F442B0 /* EmployeeTableViewCell.xib */,
+				55CF142F1C86FE7900F442B0 /* BookkeeperTableViewCell.swift */,
+				55CF14301C86FE7900F442B0 /* BookkeeperTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		55CF14571C88282700F442B0 /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				550C914A1C9017A80007E6C4 /* CoreDataModelable.swift */,
+				550C914B1C9017A80007E6C4 /* CoreDataStack.swift */,
+				550C914C1C9017A80007E6C4 /* EntityMonitor.swift */,
+				550C914D1C9017A80007E6C4 /* FetchedResultsController.swift */,
+				550C914E1C9017A80007E6C4 /* NSManagedObjectContext+AsyncHelpers.swift */,
+				550C914F1C9017A80007E6C4 /* NSManagedObjectContext+SaveHelpers.swift */,
+				550C91501C9017A80007E6C4 /* NSPersistentStoreCoordinator+AsyncHelpers.swift */,
+				550C91511C9017A80007E6C4 /* NSPersistentStoreCoordinator+SQLiteHelpers.swift */,
+			);
+			name = CoreDataStack;
+			sourceTree = "<group>";
+		};
+		55CF146B1C8842D900F442B0 /* Eureka */ = {
+			isa = PBXGroup;
+			children = (
+				550C91401C9017990007E6C4 /* Cells.swift */,
+				550C91411C9017990007E6C4 /* Controllers.swift */,
+				550C91421C9017990007E6C4 /* Core.swift */,
+				550C91431C9017990007E6C4 /* Helpers.swift */,
+				550C91441C9017990007E6C4 /* Rows.swift */,
+			);
+			name = Eureka;
+			sourceTree = "<group>";
+		};
+		55FEA7C71C84B399001394CB = {
+			isa = PBXGroup;
+			children = (
+				55CF146B1C8842D900F442B0 /* Eureka */,
+				55CF14571C88282700F442B0 /* CoreDataStack */,
+				55CF14331C86FE9000F442B0 /* Cells */,
+				55CF14201C86F8B300F442B0 /* Entities */,
+				55FEA7D21C84B399001394CB /* Enterprise contacts */,
+				55FEA7D11C84B399001394CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55FEA7D11C84B399001394CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55FEA7D01C84B399001394CB /* Enterprise contacts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55FEA7D21C84B399001394CB /* Enterprise contacts */ = {
+			isa = PBXGroup;
+			children = (
+				55FEA7D31C84B399001394CB /* AppDelegate.swift */,
+				55FEA7F51C85768F001394CB /* ListTableViewController.swift */,
+				55CF14211C86F92200F442B0 /* WorkerTableViewController.swift */,
+				55FEA7F11C857324001394CB /* GalleryViewController.swift */,
+				55FEA7ED1C857211001394CB /* ServiceViewController.swift */,
+				55CF14551C88266C00F442B0 /* CoreDataStackSingleton.swift */,
+				55CF140E1C85AC1000F442B0 /* AEXML.swift */,
+				55FEA7F21C857324001394CB /* GalleryViewController.xib */,
+				55FEA7EE1C857211001394CB /* ServiceViewController.xib */,
+				55FEA7E81C84C4BE001394CB /* SplashScreen.xib */,
+				55FEA7DA1C84B399001394CB /* Enterprise_contacts.xcdatamodeld */,
+				55FEA7EC1C84CB99001394CB /* Supporting Files */,
+			);
+			path = "Enterprise contacts";
+			sourceTree = "<group>";
+		};
+		55FEA7EC1C84CB99001394CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55FEA7DD1C84B399001394CB /* Assets.xcassets */,
+				55FEA7E21C84B399001394CB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55FEA7CF1C84B399001394CB /* Enterprise contacts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55FEA7E51C84B399001394CB /* Build configuration list for PBXNativeTarget "Enterprise contacts" */;
+			buildPhases = (
+				55FEA7CC1C84B399001394CB /* Sources */,
+				55FEA7CD1C84B399001394CB /* Frameworks */,
+				55FEA7CE1C84B399001394CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Enterprise contacts";
+			productName = "Enterprise contacts";
+			productReference = 55FEA7D01C84B399001394CB /* Enterprise contacts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55FEA7C81C84B399001394CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Andrey;
+				TargetAttributes = {
+					55FEA7CF1C84B399001394CB = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 55FEA7CB1C84B399001394CB /* Build configuration list for PBXProject "Enterprise contacts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55FEA7C71C84B399001394CB;
+			productRefGroup = 55FEA7D11C84B399001394CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55FEA7CF1C84B399001394CB /* Enterprise contacts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55FEA7CE1C84B399001394CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55FEA7E91C84C4BE001394CB /* SplashScreen.xib in Resources */,
+				55FEA7F41C857324001394CB /* GalleryViewController.xib in Resources */,
+				55FEA7DE1C84B399001394CB /* Assets.xcassets in Resources */,
+				55CF142E1C86FE5F00F442B0 /* EmployeeTableViewCell.xib in Resources */,
+				55FEA7F01C857211001394CB /* ServiceViewController.xib in Resources */,
+				55CF14321C86FE7900F442B0 /* BookkeeperTableViewCell.xib in Resources */,
+				55CF142A1C86FE4900F442B0 /* DirectorTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55FEA7CC1C84B399001394CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55CF14511C8705F200F442B0 /* Employee+CoreDataProperties.swift in Sources */,
+				55CF14521C8705F200F442B0 /* Worker.swift in Sources */,
+				55FEA7D41C84B399001394CB /* AppDelegate.swift in Sources */,
+				55CF140F1C85AC1000F442B0 /* AEXML.swift in Sources */,
+				550C91481C9017990007E6C4 /* Helpers.swift in Sources */,
+				550C91461C9017990007E6C4 /* Controllers.swift in Sources */,
+				55CF144C1C8705F200F442B0 /* Bookkeeper.swift in Sources */,
+				55CF142D1C86FE5F00F442B0 /* EmployeeTableViewCell.swift in Sources */,
+				55FEA7F31C857324001394CB /* GalleryViewController.swift in Sources */,
+				550C91581C9017A80007E6C4 /* NSPersistentStoreCoordinator+AsyncHelpers.swift in Sources */,
+				55CF14231C86F92200F442B0 /* WorkerTableViewController.swift in Sources */,
+				55CF14291C86FE4900F442B0 /* DirectorTableViewCell.swift in Sources */,
+				550C91451C9017990007E6C4 /* Cells.swift in Sources */,
+				55CF144E1C8705F200F442B0 /* Director.swift in Sources */,
+				55CF14531C8705F200F442B0 /* Worker+CoreDataProperties.swift in Sources */,
+				55CF144F1C8705F200F442B0 /* Director+CoreDataProperties.swift in Sources */,
+				550C91471C9017990007E6C4 /* Core.swift in Sources */,
+				550C91491C9017990007E6C4 /* Rows.swift in Sources */,
+				55CF14501C8705F200F442B0 /* Employee.swift in Sources */,
+				550C91571C9017A80007E6C4 /* NSManagedObjectContext+SaveHelpers.swift in Sources */,
+				55CF144D1C8705F200F442B0 /* Bookkeeper+CoreDataProperties.swift in Sources */,
+				550C91561C9017A80007E6C4 /* NSManagedObjectContext+AsyncHelpers.swift in Sources */,
+				550C91531C9017A80007E6C4 /* CoreDataStack.swift in Sources */,
+				550C91521C9017A80007E6C4 /* CoreDataModelable.swift in Sources */,
+				550C91541C9017A80007E6C4 /* EntityMonitor.swift in Sources */,
+				55FEA7F61C85768F001394CB /* ListTableViewController.swift in Sources */,
+				55FEA7EF1C857211001394CB /* ServiceViewController.swift in Sources */,
+				55FEA7DC1C84B399001394CB /* Enterprise_contacts.xcdatamodeld in Sources */,
+				55CF14311C86FE7900F442B0 /* BookkeeperTableViewCell.swift in Sources */,
+				550C91551C9017A80007E6C4 /* FetchedResultsController.swift in Sources */,
+				550C91591C9017A80007E6C4 /* NSPersistentStoreCoordinator+SQLiteHelpers.swift in Sources */,
+				55CF14561C88266C00F442B0 /* CoreDataStackSingleton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		55FEA7E31C84B399001394CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55FEA7E41C84B399001394CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55FEA7E61C84B399001394CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Enterprise contacts/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Home.Enterprise-contacts";
+				PRODUCT_NAME = "Enterprise contacts";
+			};
+			name = Debug;
+		};
+		55FEA7E71C84B399001394CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Enterprise contacts/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Home.Enterprise-contacts";
+				PRODUCT_NAME = "Enterprise contacts";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55FEA7CB1C84B399001394CB /* Build configuration list for PBXProject "Enterprise contacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55FEA7E31C84B399001394CB /* Debug */,
+				55FEA7E41C84B399001394CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55FEA7E51C84B399001394CB /* Build configuration list for PBXNativeTarget "Enterprise contacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55FEA7E61C84B399001394CB /* Debug */,
+				55FEA7E71C84B399001394CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		55FEA7DA1C84B399001394CB /* Enterprise_contacts.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				55FEA7DB1C84B399001394CB /* Enterprise_contacts.xcdatamodel */,
+			);
+			currentVersion = 55FEA7DB1C84B399001394CB /* Enterprise_contacts.xcdatamodel */;
+			path = Enterprise_contacts.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 55FEA7C81C84B399001394CB /* Project object */;
+}
